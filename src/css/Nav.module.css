@@ -1,7 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding:0;
     margin:0;
     border: none;
     outline: none;
     box-sizing: border-box;
+    font-family:'Monsserrat', Arial, Helvetica, sans-serif;
+}
+.Nav{
+    width:100%;
+    padding:.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav_inner{
+    gap:3rem;
+    width:50%;
+    display: flex;
+    align-items: center;
+
+}
+.Nav_inner img{
+    width:64px;
+}
+.Nav_links{
+    display: flex;
+    font-weight: bold;
+    gap:.5rem;
+
+    width:100%;
+    justify-content: space-between;
+    color:#fff;
+}
+.Nav_links span{
+    transition:all 350ms;
+    cursor: pointer;
+}
+
+.Nav_links span:hover{
+    color:#9e3939;
+}
+.Menu{
+    width:32px;
+    height:32px;
+    display: none;
+}
+@media(max-width:431px){
+    .Nav{
+        flex-direction: column-reverse;
+        height:100%;
+    }
+    .Nav_inner{
+        gap:1rem;
+        width:100%;
+        flex-direction: column;
+        display: none;
+    }
+    .Nav_inner2{
+        gap:1rem;
+        width:100%;
+        flex-direction: column;
+    }
+    .Nav_inner2 img{
+        width:64px;
+        background-color: green;
+    }
+    .Nav_links{
+        flex-direction: column;
+
+        align-items: center;
+        gap:3rem;
+        padding:1rem;
+    }
+    .Menu{
+        display:block;
+    }
 }

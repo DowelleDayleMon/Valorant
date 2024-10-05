@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    color:#fff;
+}
+.AgentBanner{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    width:13%;
+}
+.AgentBanner img{
+    border-radius: 10px;
+}
+.AgentBanner span{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    letter-spacing: 2.5px;
+}
+@media(max-width:431px){
+    .AgentBanner{
+        width:30%;
+    }
+    .AgentBanner span{
+        font-size: .75em;
+        letter-spacing: normal;
+    }
+}

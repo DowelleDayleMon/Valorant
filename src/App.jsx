@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Nav from "./components/Nav"
+import Agents from "./pages/Agents"
 
 function App() {
 
 
   return (
     <div>
-      <Nav />
+
       <Router>
         <Routes>
-
+          <Route path="/" element={<Agents />}/>
         </Routes>
       </Router>
     </div>
