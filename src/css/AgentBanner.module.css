@@ -6,10 +6,29 @@
     display: flex;
     flex-direction: column;
     gap:.5rem;
-    width:13%;
+    cursor: pointer;
+    opacity:.25;
+    filter: blur(10px);
+    animation:Appear 2000ms ease-in-out forwards 1000ms;
 }
+
+@keyframes Appear{
+    from{}
+    to{
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 .AgentBanner img{
     border-radius: 10px;
+    transition: all 350ms;
+    border: solid 1px #ffffff25;
+}
+.AgentBanner img:hover{
+    /* scale:1.025; */
+    box-shadow: 0 0 10px #fff;
+    transform: translateY(-.5rem);
 }
 .AgentBanner span{
     font-size: 1em;
@@ -18,9 +37,6 @@
     letter-spacing: 2.5px;
 }
 @media(max-width:431px){
-    .AgentBanner{
-        width:30%;
-    }
     .AgentBanner span{
         font-size: .75em;
         letter-spacing: normal;

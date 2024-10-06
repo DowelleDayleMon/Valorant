@@ -1,0 +1,8 @@
+.Footer{
+    height: 20vh;
+    background-color: #000;
+    padding:1rem;
+
+    background-position:center;
+    background-size: cover;
+}

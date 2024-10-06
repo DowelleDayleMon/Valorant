@@ -1,0 +1,12 @@
+.AgentMain{
+    width:33%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AgentMain img{
+    width:150%;
+
+
+}

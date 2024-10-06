@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import styles from '../css/Agents.module.css'
 import Riot from '../assets/icon/logo/Riot_games_white.png'
+
 import Astra from '../assets/agents/Astra/Astra_banner.webp';
 import Breach from '../assets/agents/Breach/Breach_banner.webp';
 import Brimstone from '../assets/agents/Brimstone/Brimstone_banner.webp';
@@ -37,31 +39,79 @@ const Agents = () => {
             <div className={styles.Agents_main}>
                 <img className={styles.Riot} src={Riot} alt="Riot logo" />
                 <div className={styles.Agents_container}>
-                <AgentBanner AgentImage={Astra} AgentName="ASTRA" />
-                <AgentBanner AgentImage={Breach} AgentName="BREACH" />
-                <AgentBanner AgentImage={Brimstone} AgentName="BRIMSTONE" />
-                <AgentBanner AgentImage={Chamber} AgentName="CHAMBER" />
-                <AgentBanner AgentImage={Clove} AgentName="CLOVE" />
-                <AgentBanner AgentImage={Cypher} AgentName="CYPHER" />
-                <AgentBanner AgentImage={Deadlock} AgentName="DEADLOCK" />
-                <AgentBanner AgentImage={Fade} AgentName="FADE" />
-                <AgentBanner AgentImage={Gekko} AgentName="GEKKO" />
-                <AgentBanner AgentImage={Harbor} AgentName="HARBOR" />
-                <AgentBanner AgentImage={Jett} AgentName="JETT" />
-                <AgentBanner AgentImage={Kayo} AgentName="KAY/O" />
-                <AgentBanner AgentImage={Killjoy} AgentName="KILLJOY" />
-                <AgentBanner AgentImage={Neon} AgentName="NEON" />
-                <AgentBanner AgentImage={Omen} AgentName="OMEN" />
-                <AgentBanner AgentImage={Phoenix} AgentName="PHOENIX" />
-                <AgentBanner AgentImage={Raze} AgentName="RAZE" />
-                <AgentBanner AgentImage={Reyna} AgentName="REYNA" />
-                <AgentBanner AgentImage={Sage} AgentName="SAGE" />
-                <AgentBanner AgentImage={Skye} AgentName="SKYE" />
-                <AgentBanner AgentImage={Sova} AgentName="SOVA" />
-                <AgentBanner AgentImage={Viper} AgentName="VIPER" />
-                <AgentBanner AgentImage={Vyse} AgentName="VYSE" />
-                <AgentBanner AgentImage={Yoru} AgentName="YORU" />
 
+                <Link className={styles.SpecificAgent} to="/Home">
+                    <AgentBanner AgentImage={Astra} AgentName="ASTRA" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Breach} AgentName="BREACH" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Brimstone} AgentName="BRIMSTONE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Chamber} AgentName="CHAMBER" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Clove} AgentName="CLOVE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Cypher} AgentName="CYPHER" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Deadlock} AgentName="DEADLOCK" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Fade} AgentName="FADE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Gekko} AgentName="GEKKO" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Harbor} AgentName="HARBOR" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Jett} AgentName="JETT" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Kayo} AgentName="KAY/O" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Killjoy} AgentName="KILLJOY" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Neon} AgentName="NEON" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Omen} AgentName="OMEN" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Phoenix} AgentName="PHOENIX" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Raze} AgentName="RAZE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Reyna} AgentName="REYNA" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Sage} AgentName="SAGE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Skye} AgentName="SKYE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Sova} AgentName="SOVA" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Viper} AgentName="VIPER" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Vyse} AgentName="VYSE" />
+                </Link>
+                <Link className={styles.SpecificAgent}>
+                    <AgentBanner AgentImage={Yoru} AgentName="YORU" />
+                </Link>
 
                 </div>
             </div>

@@ -1,0 +1,29 @@
+.AgentDetails {
+    position: relative; /* Ensure the pseudo-element positions correctly */
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    overflow: hidden; /* Prevent any overflow from the pseudo-element */
+}
+
+.AgentDetails::before {
+    content: ''; /* Needed to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/maps/Pearl.webp);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Apply the blur effect */
+
+    z-index: -1; 
+}
+
+.AgentDetails_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+}
