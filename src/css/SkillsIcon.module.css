@@ -1,0 +1,9 @@
+.SkillsIcon{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.SkillsIcon img{
+    width:15%;
+}

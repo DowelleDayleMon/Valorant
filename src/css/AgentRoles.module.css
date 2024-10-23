@@ -1,0 +1,14 @@
+.AgentRoles{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    border-bottom: solid 1px #fff;
+    padding:0 0 1rem;
+}
+.AgentRoles img{
+    width:3rem;
+}
+.AgentRoles span{
+    font-size: 1.5em;
+    font-weight: bolder;
+}

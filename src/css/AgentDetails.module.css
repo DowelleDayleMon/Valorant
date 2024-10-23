@@ -1,4 +1,5 @@
 .AgentDetails {
+
     position: relative; /* Ensure the pseudo-element positions correctly */
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
@@ -22,8 +23,41 @@
 
 .AgentDetails_body{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
+    padding:0 2rem 2rem;
     height: 90vh;
+}
+.Left_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width:30%;
+    height:100%;
+}
+.Right_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    width:30%;
+    height:100%;
+}
+.Prev, .Next{
+    width:2rem;
+}
+.Prev{
+    transform: rotate(180deg);
+}
+.Lore_container{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.Lore_container span{
+    font-size: 150%;
+    text-align: right;
+    font-weight: 300;
+    opacity:.85;
 }
