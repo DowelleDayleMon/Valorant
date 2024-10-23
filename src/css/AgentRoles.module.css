@@ -6,9 +6,10 @@
     padding:0 0 1rem;
 }
 .AgentRoles img{
-    width:3rem;
+    width:2.5rem;
 }
 .AgentRoles span{
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bolder;
+    letter-spacing: 5px;
 }
