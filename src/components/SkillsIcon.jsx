@@ -5,7 +5,7 @@ const SkillsIcon = (props) => {
 
   return (
     <div className={styles.SkillsIcon}>
-      <div></div>
+      <div className={styles.Extra}></div>
       <img
         onClick={() => handleImageClick(1)}
         src={Skill1}

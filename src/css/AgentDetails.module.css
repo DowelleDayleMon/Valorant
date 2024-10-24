@@ -16,6 +16,7 @@
     background-image: url(../assets/maps/Pearl.webp);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     filter: blur(2px); /* Apply the blur effect */
 
     z-index: -1; 
@@ -26,7 +27,8 @@
     justify-content: space-between;
     align-items: center;
     padding:0 2rem 2rem;
-    height: 90vh;
+    height:90vh;
+    min-height: 90vh;
 }
 .Left_part{
     display: flex;
@@ -43,6 +45,7 @@
     align-items:flex-end;
     width:30%;
     height:100%;
+
 }
 .Prev, .Next{
     width:2rem;
@@ -67,10 +70,37 @@
 }
 .Right_container{
     display: flex;
-    gap:.5rem;
+    gap:1rem;
     align-items: center;
 }
 .Right_container .Next{
     width:2rem;
     height: 2rem;
+}
+
+
+@media(max-width:431px){
+    .AgentDetails_body{
+        flex-direction: column;
+        height:auto;
+        padding:.5rem;
+        gap:1rem;
+    }
+    .Left_part{
+        order:3;
+        width:100%;
+    }
+    .Right_part{
+        width:100%;
+        order:2;
+    }
+    .Right_container{
+        display: none;
+    }
+    .Prev{
+        display: none;
+    }
+    .Lore_container span{
+        text-align: center;
+    }
 }

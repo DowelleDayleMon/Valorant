@@ -13,3 +13,12 @@
     font-weight: bolder;
     letter-spacing: 5px;
 }
+@media(max-width:431px){
+    .AgentRoles span{
+        font-size: 1.25em;
+        letter-spacing: 2px;
+    }
+    .AgentRoles img{
+        width:1.75rem;
+    }
+}

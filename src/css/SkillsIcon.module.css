@@ -1,9 +1,15 @@
 .SkillsIcon{
     display: flex;
     justify-content: space-between;
+    width:100%;
 
 
 }
 .SkillsIcon img{
     width:15%;
+}
+@media (max-width:431px) {
+    .Extra{
+        display: none;
+    }
 }
