@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from '../../css/AgentDetails.module.css'
 import Nav from '../../components/Nav';
 import SkillsIcon from '../../components/SkillsIcon';
+import Suggested from '../../components/Suggested';
 
 import AstraMain from '../../assets/agents/Astra/Astra_main.webp'
 import AgentMain from '../../components/AgentMain';
@@ -14,6 +15,11 @@ import First from '../../assets/agents/Astra/2ndSkill.webp'
 import Second from '../../assets/agents/Astra/first.webp'
 import Third from '../../assets/agents/Astra/3rdSkill.webp'
 import Fourth from '../../assets/agents/Astra/4thSkill.webp'
+import Brimstone_icon from '../../assets/agents/Brimstone/Brimstone_icon.webp'
+import Clove_icon from '../../assets/agents/Clove/Clove_icon.webp'
+import Harbor_icon from '../../assets/agents/Harbor/Harbor_icon.webp'
+import Omen_icon from '../../assets/agents/Omen/Omen_icon.webp'
+import Viper_icon from '../../assets/agents/Viper/Viper_icon.webp'
 
 const Astra = () => {
 
@@ -43,7 +49,10 @@ const Astra = () => {
                 <AgentMain AgentPic={AstraMain}/>
                 <div className={styles.Right_part}>
                     <div></div>
-                    <img src={Next} alt="Previous icon" className={styles.Next}/>
+                    <div className={styles.Right_container}>
+                        <img src={Next} alt="Previous icon" className={styles.Next}/>
+                        <Suggested Suggested1={Brimstone_icon} Suggested2={Clove_icon} Suggested3={Harbor_icon} Suggested4={Omen_icon} Suggested5={Viper_icon}/>
+                    </div>
                     <div className={styles.Lore_container}>
                         <SkillsIcon handleImageClick={handleImageClick} selectedImage={selectedImage} Skill1={First} Skill2={Second} Skill3={Third} Skill4={Fourth}/>
                         <span className={styles.Skill_text}>

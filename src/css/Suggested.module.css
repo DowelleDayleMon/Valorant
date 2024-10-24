@@ -1,0 +1,10 @@
+.Suggested{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.Suggested img{
+    width:3rem;
+    border-radius: 50%;
+}

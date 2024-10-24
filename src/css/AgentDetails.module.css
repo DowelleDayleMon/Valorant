@@ -56,9 +56,21 @@
     gap:.5rem;
 }
 .Lore_container span{
-    font-size: 150%;
+    font-size: 125%;
     text-align: right;
     font-weight: 300;
     opacity:.85;
     line-height: 150%;
+}
+.Skill_text{
+    height: 150%;
+}
+.Right_container{
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+}
+.Right_container .Next{
+    width:2rem;
+    height: 2rem;
 }
