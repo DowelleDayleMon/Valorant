@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import styles from './css/App.module.css'
 import Agents from "./pages/Agents"
-import Astra from "./pages/AgentDetails/Astra"
 import Footer from "./components/Footer"
+
+import Astra from "./pages/AgentDetails/Astra"
+import Brimstone from "./pages/AgentDetails/Brimstone"
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Agents />}/>
           <Route path="/Agents/Astra" element={<Astra />} />
+          <Route path="/Agents/Brimstone" element={<Brimstone />} />
         </Routes>
       </Router>
       <Footer/>

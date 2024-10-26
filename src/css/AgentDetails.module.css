@@ -1,13 +1,19 @@
-.AgentDetails {
+.Lore_container,
+.Lore_container2 {
+    gap: .5rem;
+    filter: blur(10px);
+    animation: 1.5s forwards Appear-left;
+}
 
-    position: relative; /* Ensure the pseudo-element positions correctly */
+.AgentDetails {
+    position: relative;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
-    overflow: hidden; /* Prevent any overflow from the pseudo-element */
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
 }
 
 .AgentDetails::before {
-    content: ''; /* Needed to display the pseudo-element */
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -17,146 +23,148 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: blur(2px); /* Apply the blur effect */
-
-    z-index: -1; 
+    filter: blur(2px);
+    z-index: -1;
 }
 
-.AgentDetails_body{
+.AgentDetails_body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 2rem 2rem;
-    height:90vh;
+    padding: 0 2rem 2rem;
+    height: 90vh;
     min-height: 90vh;
 }
-.Left_part{
+
+.Left_part {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    width:30%;
-    height:100%;
-
+    width: 30%;
+    height: 100%;
 }
 
-
-.Right_part{
-    display: flex;
+.Lore_container,
+.Right_part {
     flex-direction: column;
-    justify-content: space-between;
-    align-items:flex-end;
-    width:30%;
-    height:100%;
-
-
+    display: flex;
 }
 
-@keyframes Appear-left{
-    from{}
-    to{
+.Right_part {
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30%;
+    height: 100%;
+}
+
+@keyframes Appear-left {
+    to {
         transform: translate(0);
         filter: blur(0);
-        opacity:1;
+        opacity: 1;
     }
 }
-.Prev, .Next{
-    width:2rem;
-}
-.Prev{
-    transform: rotate(180deg);
-}
-.Lore_container{
-    display: flex;
-    flex-direction: column;
-    gap:.5rem;
-    transform: translateX(10rem);
-    filter: blur(10px);
-    animation:Appear-left 1500ms ease forwards;
+
+.Next,
+.Prev {
+    width: 2rem;
 }
 
-.Lore_container2{
+.Prev {
+    transform: rotate(180deg);
+}
+
+.Lore_container {
+    transform: translateX(10rem);
+}
+
+.Lore_container2 {
     display: flex;
     flex-direction: column;
-    gap:.5rem;
     transform: translateX(-10rem);
-    filter: blur(10px);
-    animation:Appear-left 1500ms ease forwards;
 }
-.Lore_container span{
+
+.Lore_container span {
     font-size: 125%;
     text-align: right;
     font-weight: 300;
-    opacity:.85;
+    opacity: .85;
     line-height: 150%;
 }
-.Skill_text{
+
+.Skill_text {
     height: 150%;
 }
-.Right_container{
+
+.Right_container {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     align-items: center;
 }
-.Right_container .Next{
-    width:2rem;
+
+.Right_container .Next {
+    width: 2rem;
     height: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .AgentDetails_body{
+    .AgentDetails_body {
         flex-direction: column;
         justify-content: space-around;
-        height:auto;
-        padding:.5rem;
-        gap:3rem;
+        height: auto;
+        padding: .5rem;
+        gap: 3rem;
     }
-    .Left_part{
-        order:3;
-        width:100%;
+
+    .Left_part {
+        order: 3;
+        width: 100%;
     }
-    .Right_part{
-        width:100%;
-        order:2;
+
+    .Right_part {
+        width: 100%;
+        order: 2;
     }
-    .Right_container{
+
+    .Prev,
+    .Right_container {
         display: none;
     }
-    .Prev{
-        display: none;
+
+    .Lore_container {
+        padding: 1rem 1rem .25rem;
     }
-    .Lore_container{
-        padding:1rem 1rem .25rem;
-    }
-    .Lore_container span{
+
+    .Lore_container span {
         font-size: 200%;
         text-align: justify;
     }
-
 }
 
-@media(max-width:431px){
-    .AgentDetails_body{
+@media(max-width: 431px) {
+    .AgentDetails_body {
         flex-direction: column;
-        height:auto;
-        padding:.5rem;
-        gap:1rem;
+        height: auto;
+        padding: .5rem;
+        gap: 1rem;
     }
-    .Left_part{
-        order:3;
-        width:100%;
+
+    .Left_part {
+        order: 3;
+        width: 100%;
     }
-    .Right_part{
-        width:100%;
-        order:2;
+
+    .Right_part {
+        width: 100%;
+        order: 2;
     }
-    .Right_container{
+
+    .Prev,
+    .Right_container {
         display: none;
     }
-    .Prev{
-        display: none;
-    }
-    .Lore_container span{
+
+    .Lore_container span {
         text-align: center;
     }
 }

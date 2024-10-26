@@ -11,6 +11,8 @@
     animation:Appear 1500ms ease forwards;
 
 }
+
+
 @keyframes Appear{
     from{}
     to{
@@ -22,6 +24,13 @@
 .AgentMain img{
     width:150%;
     z-index: 2;
+    animation: Bounce 1500ms ease alternate infinite forwards 1250ms;
+}
+@keyframes Bounce{
+    from{}
+    to{
+        transform: translateY(-2rem);
+    }
 }
 
 .AgentMain span{
