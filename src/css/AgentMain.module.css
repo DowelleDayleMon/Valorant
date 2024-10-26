@@ -20,6 +20,11 @@
     font-style: italic;
     transform: translateY(-2rem);
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .AgentMain{
+        width:75%;
+    }
+}
 @media(max-width: 431px){
     .AgentMain{
         width:90%;

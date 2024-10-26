@@ -78,6 +78,36 @@
     height: 2rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .AgentDetails_body{
+        flex-direction: column;
+        justify-content: space-around;
+        height:auto;
+        padding:.5rem;
+        gap:1rem;
+    }
+    .Left_part{
+        order:3;
+        width:100%;
+    }
+    .Right_part{
+        width:100%;
+        order:2;
+    }
+    .Right_container{
+        display: none;
+    }
+    .Prev{
+        display: none;
+    }
+    .Lore_container span{
+        text-align: center;
+    }
+    .Skill_text{
+        height: 200%;
+    }
+
+}
 
 @media(max-width:431px){
     .AgentDetails_body{
