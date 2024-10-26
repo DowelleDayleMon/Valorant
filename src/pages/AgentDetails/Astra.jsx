@@ -40,7 +40,7 @@ const Astra = () => {
                 <div className={styles.Left_part}>
                     <div></div>
                     <img src={Next} alt="Previous icon" className={styles.Prev}/>
-                    <div className={styles.Lore_container}>
+                    <div className={styles.Lore_container2}>
                         <AgentRole Role_icon={Controller} Role_name={"CONTROLLER"}/>
                         <Lore Lore_text={"A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next."}/>
                     </div>

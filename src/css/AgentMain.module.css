@@ -5,7 +5,19 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    opacity:0;
+    filter: blur(10px);
+    transform: translateY(-10rem);
+    animation:Appear 1500ms ease forwards;
 
+}
+@keyframes Appear{
+    from{}
+    to{
+        transform: translate(0);
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 .AgentMain img{
     width:150%;

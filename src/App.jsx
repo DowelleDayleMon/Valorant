@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Agents />}/>
-          <Route path="/Astra" element={<Astra />} />
+          <Route path="/Agents/Astra" element={<Astra />} />
         </Routes>
       </Router>
       <Footer/>

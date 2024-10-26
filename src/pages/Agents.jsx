@@ -40,7 +40,7 @@ const Agents = () => {
                 <img className={styles.Riot} src={Riot} alt="Riot logo" />
                 <div className={styles.Agents_container}>
 
-                <Link className={styles.SpecificAgent} to="/Home">
+                <Link className={styles.SpecificAgent} to="/Agents/Astra">
                     <AgentBanner AgentImage={Astra} AgentName="ASTRA" />
                 </Link>
                 <Link className={styles.SpecificAgent}>

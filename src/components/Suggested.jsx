@@ -5,10 +5,10 @@ const Suggested = (props) => {
     return(
         <div className={styles.Suggested}>
             <Link><img src={props.Suggested1}/></Link>
-            <img src={props.Suggested2}/>
-            <img src={props.Suggested3}/>
-            <img src={props.Suggested4} />
-            <img src={props.Suggested5} />
+            <Link><img src={props.Suggested2}/></Link>
+            <Link><img src={props.Suggested3}/></Link>
+            <Link><img src={props.Suggested4}/></Link>
+            <Link><img src={props.Suggested5}/></Link>
         </div>
     )
 }
