@@ -24,7 +24,7 @@
 .AgentMain img{
     width:150%;
     z-index: 2;
-    animation: Bounce 1500ms ease alternate infinite forwards 1250ms;
+    animation: Bounce 1500ms ease alternate infinite forwards 1550ms;
 }
 @keyframes Bounce{
     from{}

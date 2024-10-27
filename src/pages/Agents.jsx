@@ -43,10 +43,10 @@ const Agents = () => {
                 <Link className={styles.SpecificAgent} to="/Agents/Astra">
                     <AgentBanner AgentImage={Astra} AgentName="ASTRA" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Breach">
                     <AgentBanner AgentImage={Breach} AgentName="BREACH" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Brimstone">
                     <AgentBanner AgentImage={Brimstone} AgentName="BRIMSTONE" />
                 </Link>
                 <Link className={styles.SpecificAgent}>

@@ -4,7 +4,7 @@ const AgentMain = (props) => {
     return(
         <div className={styles.AgentMain}>
             <img src={props.AgentPic} alt={props.AltAgent} />
-            <span>ASTRA</span>
+            <span>{props.Agent_name}</span>
         </div>
     )
 }
