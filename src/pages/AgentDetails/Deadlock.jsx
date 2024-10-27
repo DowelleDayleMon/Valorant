@@ -12,14 +12,14 @@ import agentsData from '../../data/agentsData';
 
 import Next from '../../assets/icon/clicks/next.png'
 
-const Clove = () => {
+const Deadlock = () => {
     const [selectedImage, setSelectedImage] = useState(0); 
 
     const handleImageClick = (imgNumber) => {
         setSelectedImage(imgNumber);
     };
 
-    const agent = agentsData.Clove;
+    const agent = agentsData.Deadlock;
 
     return (
         <div className={styles.AgentDetails}>
@@ -27,7 +27,7 @@ const Clove = () => {
             <div className={styles.AgentDetails_body}>
                 <div className={styles.Left_part}>
                     <div></div>
-                    <Link to='/Agents/Chamber'><img src={Next} alt="Next icon" className={styles.Prev} /></Link>
+                    <Link to='/Agents/Cypher'><img src={Next} alt="Next icon" className={styles.Prev} /></Link>
                     <div className={styles.Lore_container2}>
                         <AgentRole Role_icon={agent.role_icon} Role_name={agent.role} />
                         <Lore Lore_text={agent.lore} />
@@ -39,7 +39,7 @@ const Clove = () => {
                 <div className={styles.Right_part}>
                     <div></div>
                     <div className={styles.Right_container}>
-                    <Link to='/Agents/Cypher'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
+                    <Link to='/Agents/Fade'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
                         <Suggested 
                             Suggested1={agent.suggested[0]} 
                             Suggested2={agent.suggested[1]} 
@@ -67,4 +67,4 @@ const Clove = () => {
     );
 };
 
-export default Clove;
+export default Deadlock;

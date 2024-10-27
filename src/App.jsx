@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import styles from './css/App.module.css'
 import Agents from "./pages/Agents"
 import Footer from "./components/Footer"
 
@@ -8,6 +7,10 @@ import Brimstone from "./pages/AgentDetails/Brimstone"
 import Breach from './pages/AgentDetails/Breach'
 import Chamber from "./pages/AgentDetails/Chamber"
 import Clove from "./pages/AgentDetails/Clove"
+import Cypher from "./pages/AgentDetails/Cypher"
+import Fade from './pages/AgentDetails/Fade'
+import Deadlock from "./pages/AgentDetails/Deadlock"
+
 
 function App() {
 
@@ -23,6 +26,9 @@ function App() {
           <Route path="/Agents/Breach" element={<Breach />} />
           <Route path="/Agents/Chamber" element={<Chamber />} />
           <Route path="/Agents/Clove" element={<Clove />} />
+          <Route path="/Agents/Cypher" element={<Cypher />} />
+          <Route path="/Agents/Fade" element={<Fade />} />
+          <Route path="/Agents/Deadlock" element={<Deadlock />} />
         </Routes>
       </Router>
       <Footer/>

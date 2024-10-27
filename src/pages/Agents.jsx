@@ -49,19 +49,19 @@ const Agents = () => {
                 <Link className={styles.SpecificAgent} to="/Agents/Brimstone">
                     <AgentBanner AgentImage={Brimstone} AgentName="BRIMSTONE" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Chamber">
                     <AgentBanner AgentImage={Chamber} AgentName="CHAMBER" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Clove">
                     <AgentBanner AgentImage={Clove} AgentName="CLOVE" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Cypher">
                     <AgentBanner AgentImage={Cypher} AgentName="CYPHER" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Deadlock">
                     <AgentBanner AgentImage={Deadlock} AgentName="DEADLOCK" />
                 </Link>
-                <Link className={styles.SpecificAgent}>
+                <Link className={styles.SpecificAgent} to="/Agents/Fade">
                     <AgentBanner AgentImage={Fade} AgentName="FADE" />
                 </Link>
                 <Link className={styles.SpecificAgent}>

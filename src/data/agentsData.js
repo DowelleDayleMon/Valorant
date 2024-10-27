@@ -39,6 +39,25 @@ import CloveRuse from '../assets/agents/Clove/CloveRuse.webp';
 import ClovePickmeup from '../assets/agents/Clove/ClovePickmeup.webp'; 
 import CloveNotdeadyet from '../assets/agents/Clove/CloveNotdeadyet.webp'; 
 
+import CypherMain from '../assets/agents/Cypher/Cypher_main.webp';
+import CypherTrap from '../assets/agents/Cypher/CypherTrap.webp';
+import CypherCage from '../assets/agents/Cypher/CypherCage.webp';
+import CypherCamera from '../assets/agents/Cypher/CypherCamera.webp';
+import CypherTheft from '../assets/agents/Cypher/CypherTheft.webp';
+
+import DeadlockMain from '../assets/agents/Deadlock/Deadlock_main.webp';
+import DeadlockNet from '../assets/agents/Deadlock/DeadlockNet.webp';
+import DeadlockSensor from '../assets/agents/Deadlock/DeadlockSensor.webp';
+import DeadlockWall from '../assets/agents/Deadlock/DeadlockWall.webp';
+import DeadlockCacoon from '../assets/agents/Deadlock/DeadlockCacoon.webp';
+
+import FadeMain from '../assets/agents/Fade/Fade_main.webp';
+import FadeHaunt from '../assets/agents/Fade/FadeHaunt.webp';
+import FadeSeize from '../assets/agents/Fade/FadeSeize.webp';
+import FadeProwler from '../assets/agents/Fade/FadeProwler.webp';
+import FadeNightfall from '../assets/agents/Fade/FadeNightfall.webp';
+
+
 const agentsData = {
 
     Astra: {
@@ -224,7 +243,120 @@ const agentsData = {
             ViperIcon,
         ],
         mainImage: CloveMain,
-    }
+    },
+
+
+    Cypher: {
+        Agent_name: "CYPHER",
+        role: "Sentinel",
+        role_icon: Sentinel,
+        lore: "A master of surveillance, Cypher uses his gadgets to keep an eye on enemy movements and control the battlefield. His skills provide constant intel, making him essential for tracking opponents and setting up defenses.",
+        skills: [
+            {
+                name: "Trapwire",
+                description: "Set up a hidden wire between walls that tethers and reveals enemies who cross it. This ability helps secure areas and catch opponents off guard.",
+                image: CypherTrap
+            },
+            {
+                name: "Cyber Cage",
+                description: "Deploy a Cyber Cage that blocks vision and emits a unique sound when enemies pass through. Useful for stalling pushes or covering retreats.",
+                image: CypherCage
+            },
+            {
+                name: "Spycam",
+                description: "Place a remote camera to view areas from afar. You can activate it to mark enemies with a dart, providing invaluable information to your team.",
+                image: CypherCamera
+            },
+            {
+                name: "Neural Theft",
+                description: "Reveal the location of all enemies by extracting information from a recently deceased enemy. Ideal for late-round plays and uncovering hidden threats.",
+                image: CypherTheft
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage : CypherMain, 
+    },
+    
+    Deadlock: {
+        Agent_name: "DEADLOCK",
+        role: "Sentinel",
+        role_icon: Sentinel,
+        lore: "Steadfast and relentless, Deadlock uses advanced technology to secure areas and lock down opponents. Her precision and tactical traps make her an expert in controlling the battlefield and eliminating threats.",
+        skills: [
+            {
+                name: "GravNet",
+                description: "Throw a GravNet grenade that forces enemies caught in its range to crouch and slow down. Perfect for limiting enemy mobility and setting up ambushes.",
+                image: DeadlockNet
+            },
+            {
+                name: "Sonic Sensor",
+                description: "Place a sensor that detects sound and concusses enemies when they make noise nearby. Useful for defending critical areas and punishing aggressive plays.",
+                image: DeadlockSensor
+            },
+            {
+                name: "Barrier Mesh",
+                description: "Deploy a mesh barrier that blocks enemy movement in key areas. This ability is ideal for controlling choke points and slowing down enemy advances.",
+                image: DeadlockWall
+            },
+            {
+                name: "Annihilation",
+                description: "Activate a powerful weapon that launches a wave, damaging and disrupting enemies in its path. Ideal for clearing out clusters of enemies and shifting the momentum.",
+                image: DeadlockCacoon
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage : DeadlockMain, 
+    },
+
+    Fade: {
+        Agent_name: "FADE",
+        role: "Initiator",
+        role_icon: Initiator,
+        lore: "Embracing shadows and fear, Fade specializes in tracking down and exposing her enemies. Her abilities disrupt opponents’ senses and reveal their positions, making her an invaluable ally in hunting down threats.",
+        skills: [
+            {
+                name: "Haunt",
+                description: "Throw an orb that reveals enemies caught in its sight. This ability pinpoints locations, forcing opponents to either move or be exposed.",
+                image: FadeHaunt
+            },
+            {
+                name: "Seize",
+                description: "Deploy a shadow orb that binds and hinders enemies within its reach. An effective tool for holding down an area and setting up advantageous plays.",
+                image: FadeSeize
+            },
+            {
+                name: "Prowler",
+                description: "Release a creature that tracks and blinds the first enemy it encounters. Perfect for scouting ahead and disorienting foes, giving your team the upper hand.",
+                image: FadeProwler
+            },
+            {
+                name: "Nightfall",
+                description: "Unleash a wave of energy that deafens, decays, and reveals enemies caught within its path. This ultimate creates an ideal opening for aggressive pushes.",
+                image: FadeNightfall
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage : FadeMain, 
+    },
+           
     
     
 };
