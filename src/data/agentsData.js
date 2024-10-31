@@ -57,6 +57,18 @@ import FadeSeize from '../assets/agents/Fade/FadeSeize.webp';
 import FadeProwler from '../assets/agents/Fade/FadeProwler.webp';
 import FadeNightfall from '../assets/agents/Fade/FadeNightfall.webp';
 
+import GekkoMain from '../assets/agents/Gekko/Gekko_main.webp';
+import GekkoDizzy from '../assets/agents/Gekko/GekkoDizzy.webp';
+import GekkoWingman from '../assets/agents/Gekko/GekkoWingman.webp';
+import GekkoMosh from '../assets/agents/Gekko/GekkoMosh.webp';
+import GekkoThrash from '../assets/agents/Gekko/GekkoThrash.webp';
+
+import HarborMain from '../assets/agents/Harbor/Harbor_main.webp';
+import HarborCascade from '../assets/agents/Harbor/HarborCascade.webp';
+import HarborCove from '../assets/agents/Harbor/HarborCove.webp';
+import HarborHigh from '../assets/agents/Harbor/HarborHigh.webp';
+import HarborReckoning from '../assets/agents/Harbor/HarborReckoning.webp';
+
 
 const agentsData = {
 
@@ -355,6 +367,80 @@ const agentsData = {
             ViperIcon,
         ],
         mainImage : FadeMain, 
+    },
+
+    Gekko: {
+        Agent_name: "GEKKO",
+        role: "Initiator",
+        role_icon: Initiator,
+        lore: "With his unique team of creatures, Gekko brings innovation to the battlefield. His abilities focus on crowd control, support, and area denial, making him a versatile asset in any team composition.",
+        skills: [
+            {
+                name: "Dizzy",
+                description: "Send Dizzy soaring through the air. Enemies in Dizzy’s line of sight are temporarily blinded, providing a perfect opportunity to secure control.",
+                image: GekkoDizzy
+            },
+            {
+                name: "Wingman",
+                description: "Deploy Wingman to scout ahead or plant/disarm spikes. Wingman’s autonomous behavior adds flexibility in high-stakes situations.",
+                image: GekkoWingman
+            },
+            {
+                name: "Mosh Pit",
+                description: "Throw Mosh into an area, where it expands and deals explosive damage over a wide radius. Excellent for clearing and denying space.",
+                image: GekkoMosh
+            },
+            {
+                name: "Thrash",
+                description: "Unleash Thrash to lunge forward, detonating upon impact and detaining enemies caught within. Thrash provides crucial moments to gain an advantage.",
+                image: GekkoThrash
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage: GekkoMain,
+    },
+
+    Harbor: {
+        Agent_name: "HARBOR",
+        role: "Controller",
+        role_icon: Controller,
+        lore: "A master of water manipulation, Harbor uses his abilities to shape the battlefield, providing cover and protection for his allies while disrupting his enemies’ strategies.",
+        skills: [
+            {
+                name: "Cascade",
+                description: "Deploys a wave of water that moves forward, blocking vision and providing cover for strategic advances.",
+                image: HarborCascade
+            },
+            {
+                name: "Cove",
+                description: "Creates a sphere of water that blocks bullets, offering a temporary safe zone for teammates.",
+                image: HarborCove
+            },
+            {
+                name: "High Tide",
+                description: "Releases a wall of water that can curve along the terrain, ideal for blocking sightlines and cutting off enemy sight.",
+                image: HarborHigh
+            },
+            {
+                name: "Reckoning",
+                description: "Unleashes an area-of-effect attack that concusses enemies within its range, ideal for creating opportunities for aggressive pushes.",
+                image: HarborReckoning
+            }
+        ],
+        suggested: [
+            AstraIcon,
+            CloveIcon,
+            HarborIcon,
+            OmenIcon,
+            ViperIcon,
+        ],
+        mainImage: HarborMain
     },
            
     

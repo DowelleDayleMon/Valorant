@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../../css/AgentDetails.module.css';
-import styles2 from '../../css/AgentDetails.module.css';
 import Nav from '../../components/Nav';
 import SkillsIcon from '../../components/SkillsIcon';
 import Suggested from '../../components/Suggested';
@@ -11,16 +10,16 @@ import AgentRole from '../../components/AgentRole';
 
 import agentsData from '../../data/agentsData'; 
 
-import Next from '../../assets/icon/clicks/next.png'
+import Next from '../../assets/icon/clicks/next.png';
 
-const Fade = () => {
-    const [selectedImage, setSelectedImage] = useState(0); 
+const Gekko = () => {
+    const [selectedImage, setSelectedImage] = useState(0);
 
     const handleImageClick = (imgNumber) => {
         setSelectedImage(imgNumber);
     };
 
-    const agent = agentsData.Fade;
+    const agent = agentsData.Gekko;
 
     return (
         <div className={styles.AgentDetails}>
@@ -28,7 +27,7 @@ const Fade = () => {
             <div className={styles.AgentDetails_body}>
                 <div className={styles.Left_part}>
                     <div></div>
-                    <Link to='/Agents/Deadlock'><img src={Next} alt="Next icon" className={styles.Prev} /></Link>
+                    <Link to='/Agents/Fade'><img src={Next} alt="Previous icon" className={styles.Prev} /></Link>
                     <div className={styles.Lore_container2}>
                         <AgentRole Role_icon={agent.role_icon} Role_name={agent.role} />
                         <Lore Lore_text={agent.lore} />
@@ -40,7 +39,7 @@ const Fade = () => {
                 <div className={styles.Right_part}>
                     <div></div>
                     <div className={styles.Right_container}>
-                    <Link to='/Agents/Brimstone'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
+                        <Link to='/Agents/Harbor'><img src={Next} alt="Next icon" className={styles.Next} /></Link>
                         <Suggested 
                             Suggested1={agent.suggested[0]} 
                             Suggested2={agent.suggested[1]} 
@@ -68,4 +67,4 @@ const Fade = () => {
     );
 };
 
-export default Fade;
+export default Gekko;

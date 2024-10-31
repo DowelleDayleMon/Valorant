@@ -10,7 +10,8 @@ import Clove from "./pages/AgentDetails/Clove"
 import Cypher from "./pages/AgentDetails/Cypher"
 import Fade from './pages/AgentDetails/Fade'
 import Deadlock from "./pages/AgentDetails/Deadlock"
-
+import Gekko from "./pages/AgentDetails/Gekko"
+import Harbor from "./pages/AgentDetails/Harbor"
 
 function App() {
 
@@ -27,8 +28,10 @@ function App() {
           <Route path="/Agents/Chamber" element={<Chamber />} />
           <Route path="/Agents/Clove" element={<Clove />} />
           <Route path="/Agents/Cypher" element={<Cypher />} />
-          <Route path="/Agents/Fade" element={<Fade />} />
           <Route path="/Agents/Deadlock" element={<Deadlock />} />
+          <Route path="/Agents/Fade" element={<Fade />} />
+          <Route path="/Agents/Gekko" element={<Gekko />} />
+          <Route path="/Agents/Harbor" element={<Harbor />} />
         </Routes>
       </Router>
       <Footer/>
